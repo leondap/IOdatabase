@@ -1,5 +1,3 @@
-library(recluster)
-
 get.IOdbseqs<-function(families=NULL, subfamilies=NULL, genera=NULL, species=NULL,
                    countries=NULL, xlim=NULL, ylim=NULL){
   spetot<-checklist$Taxa.name

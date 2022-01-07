@@ -11,7 +11,8 @@ mydata<-get.IOdbseqs(subfamilies=c("Satyrinae"),species=c("Pieris_napi","Pieris_
 To install IOdatabase you also need to install recluster. Use:
 ```
 install.packages("remotes")
-remotes::install_github("leondap/recluster","leondap/iodatabase")
+remotes::install_github("leondap/recluster")
+remotes::install_github("leondap/iodatabase")
 ```
 
 The function get.IOdbseqs extracts COI sequences and metadata for specimens. In particular the following query extracts all Satyrinae and Pieris napi and Pieris rapae while advertising that "Charles_Darwin" is not an available species in the checklist. Moreover, the xlim query limits the data to the specimens collected between 10 and 15 degrees of longitude.

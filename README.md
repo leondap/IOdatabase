@@ -3,14 +3,5 @@
 # IOdatabase
 ### Integrated and Open Butterly Database
 
-
+clear: both
 The IOdatabase integrates several datasets of butterflies from Western Palaearctic interconnected with a harmonised taxonomy.
- 
-  
-   
-    
-     
-      
-       
-       culo
-

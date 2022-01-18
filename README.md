@@ -11,7 +11,6 @@ The IOdatabase project is currently contributed by four research units located i
 To install IOdatabase you also need to install recluster. Use:
 ```
 install.packages("remotes")
-remotes::install_github("leondap/recluster")
 remotes::install_github("leondap/iodatabase")
 ```
 

@@ -50,9 +50,10 @@ colours<-recluster.col(sp.pcoa)
 ```
 Plot the sequences as pie in the map, the mnore similar two sequences in colour the more genetically close they are
 ```
-recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.4)
-plot(map,add=T)
+plot(map,xlim=range(metadata[,10]),ylim=range(metadata[,9]))
+recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.4,add=T)
 ```
+![](https://github.com/leondap/images/blob/main/genetic_map.png?raw=true)
 
 
 

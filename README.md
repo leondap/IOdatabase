@@ -3,7 +3,10 @@
 # IOdatabase
 ### Integrated and Open Butterly Database
 
-The IOdatabase is intended as a project integrating several datasets of butterflies from Western Palaearctic harmonised with a shared taxonomy. IOdatabase includes some main datasets provided in recent paper like a revised version of the species checklist from West Palerarctic (Middleton Welling et al. 2020) and more than 30000 COI sequences for 512 species. Metadata (coordinates, country, BOLD and Genbank codes are also available). Using these data we also calculated some basic indexes of genetic diversity (number of haplotypes observed and predicted based on rarefaction curves, GST, DST, haplotype diversity and nucleotide diversity). 
+The IOdatabase is intended as a project integrating several datasets of butterflies from Western Palaearctic harmonised with a shared taxonomy. IOdatabase includes some main datasets provided in recent paper like a revised version of the species checklist from West Palerarctic (Middleton Welling et al. 2020) and more than 30000 COI sequences for 533 species. Metadata (coordinates, country, BOLD and Genbank codes are also available). Using these data we also calculated some basic indexes of genetic diversity (number of haplotypes observed and predicted based on rarefaction curves, GST, DST, haplotype diversity and nucleotide diversity). 
+
+The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:
+https://www.dropbox.com/s/9na3fipjl44w37p/Atlas_1_0.pdf?dl=0
 
 The IOdatabase project is currently contributed by four research units located in Florence University (Italy), Institut de Biologia Evolutiva (Spain), Institu Botànic de Barcelona (Spain) and University of Oulu (Finland).
 

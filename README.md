@@ -1,4 +1,4 @@
-<img src="https://github.com/leondap/images/blob/main/io_database.jpg?raw=true" width="400" img align="right">
+<img src="https://github.com/leondap/images/blob/main/io_database.jpg?raw=true" width="350" img align="right">
 
 # IOdatabase
 ### Integrated and Open Butterly Database
@@ -6,7 +6,7 @@
 The IOdatabase is intended as a project integrating several datasets of butterflies from Western Palaearctic harmonised with a shared taxonomy. IOdatabase includes some main datasets provided in recent paper like a revised version of the species checklist from West Palerarctic (Middleton Welling et al. 2020) and more than 30000 COI sequences for 533 species. Metadata (coordinates, country, BOLD and Genbank codes are also available). Using these data we also calculated some basic indexes of genetic diversity (number of haplotypes observed and predicted based on rarefaction curves, GST, DST, haplotype diversity and nucleotide diversity). 
 
 
-<img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="200" img align="right">
+<img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="right">
 The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:
 https://www.dropbox.com/s/9na3fipjl44w37p/Atlas_1_0.pdf?dl=0
 

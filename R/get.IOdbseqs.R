@@ -1,6 +1,6 @@
 get.IOdbseqs<-function(families=NULL, subfamilies=NULL, genera=NULL, species=NULL,
                    countries=NULL, xlim=NULL, ylim=NULL){
-  spetot<-checklist$Taxa.name
+  spetot<-checklist$Scientific_Name
   speciesusefam<-NULL
   speciesusesub<-NULL
   speciesusegen<-NULL
@@ -39,10 +39,10 @@ failed<-species[-check]
 if(length(failed)>0){
 print(paste("The following species were not found in the checklist:",failed))
 }
-  speciesusesp<-spetot[which(checklist$Taxa.name %in% species)]
+  speciesusesp<-spetot[which(checklist$Scientific_Name %in% species)]
 }
 speciesuse<-unique(c(speciesusefam,speciesusesub,speciesusegen,speciesusesp))
-select<-which(specimens$SpeciesName %in% speciesuse)
+select<-which(specimens$Scientific_Name %in% speciesuse)
 
 if(!is.null(xlim)){
   uselong<-which(specimens$Longitude>=xlim[1] & specimens$Longitude<=xlim[2])

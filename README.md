@@ -7,7 +7,7 @@ The IOdatabase is intended as a project integrating several datasets of butterfl
 
 
 <img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="left">
-The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:
+The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
 https://www.dropbox.com/s/70l2p2t18rz4ecc/Atlas_v1.0.pdf?dl=0
 
 

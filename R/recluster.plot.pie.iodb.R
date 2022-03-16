@@ -169,4 +169,5 @@ recluster.plot.pie.iodb <-
         draw.circle(mean(specimens[, 1]), mean(specimens[, 2]), radius = rad)
       }
     }
+    arrows(-13.18,27.67,-8.67,27.67,length=0)
   }

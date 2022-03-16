@@ -49,7 +49,7 @@ fasta<-mydata$fasta
 ```
 Define the areas to be separated in pies defined as islands, and as size of continental cells in decimal degrees of latitude and longitude (square). The areas to be considered as continental should be indicated in the areascoll vector.
 ```
-sitescodes<-define.areas(coord=metadata[,c(10,9)],areas=metadata[,7], square=2, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))
+sitescodes<-define.areas(coord=metadata[,c(10,9)],areas=metadata[,7], square=3, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))
 ```
 Compute genetic distances among specimens
 ```
@@ -59,14 +59,52 @@ Perform a PCoA and project the configuration into RGB space as done by recluster
 
 ```
 sp.pcoa <- stats::cmdscale(sp.gendists, k=2)
-colours<-recluster.col(sp.pcoa)
+colours<-recluster.col2(sp.pcoa)
 ```
+Adjust colours for the map
+```
+colfunc <- colorRampPalette(c("#C1DABB","#E1D9BB","#e0c9a7","#cbb491","#a78a5d")) # colors elevation palette 
+pal <- colfunc(20) # make elevation palette
+```
+
 Plot the sequences as pie in the map, the mnore similar two sequences in colour the more genetically close they are
 ```
-plot(map,xlim=range(metadata[,10]),ylim=range(metadata[,9]))
-recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.4,add=T)
+plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
+plot(elev,col = pal,add=T,legend=F)
+plot(sea,add = T, col = "azure2", border=F)
+plot(map, add=T)
+arrows(-13.18, 27.67, -8.67, 27.67, length = 0, col="black") #Draw the correct Morocco boundary
+recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.3,add=T)
+
 ```
 ![](https://github.com/leondap/images/blob/main/genetic_map.png?raw=true)
+
+
+
+
+
+
+
+
+
+
+
+sitescodes<-define.areas(coord=metadata[,c(10,9)],areas=metadata[,7], square=2, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))
+sp.gendists <- dist.dna(fasta, model = "raw", pairwise.deletion = TRUE)
+sp.pcoa <- stats::cmdscale(sp.gendists, k=2)
+colours<-recluster.col2(sp.pcoa)
+plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
+plot(elev,col = pal,add=T,legend=F)
+plot(sea,add = T, col = "azure2", border=F)
+plot(map, add=T)
+arrows(-13.18, 27.67, -8.67, 27.67, length = 0, col="black")
+
+recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.4,add=T)
+
+
+
+
+
 
 
 

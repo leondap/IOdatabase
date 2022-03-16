@@ -77,30 +77,7 @@ arrows(-13.18, 27.67, -8.67, 27.67, length = 0, col="black") #Draw the correct M
 recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.3,add=T)
 
 ```
-![](https://github.com/leondap/images/blob/main/genetic_map.png?raw=true)
-
-
-
-
-
-
-
-
-
-
-
-sitescodes<-define.areas(coord=metadata[,c(10,9)],areas=metadata[,7], square=2, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))
-sp.gendists <- dist.dna(fasta, model = "raw", pairwise.deletion = TRUE)
-sp.pcoa <- stats::cmdscale(sp.gendists, k=2)
-colours<-recluster.col2(sp.pcoa)
-plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
-plot(elev,col = pal,add=T,legend=F)
-plot(sea,add = T, col = "azure2", border=F)
-plot(map, add=T)
-arrows(-13.18, 27.67, -8.67, 27.67, length = 0, col="black")
-
-recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.4,add=T)
-
+![](https://github.com/leondap/images/blob/main/Lasiommata_megera_map.png?raw=true)
 
 
 

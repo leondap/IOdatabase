@@ -32,8 +32,7 @@ library(rworldxtra)
 map<-getMap(resolution = "high")
 
 library(iodatabase)
-# load the data
-load("~/iodatabase/data/IODBdata.RData")
+
 #Extract the data
 mydata<-get.IOdbseqs(subfamilies=c("Satyrinae"),species=c("Pieris_napi","Pieris_rapae","Charles_Darwin"),xlim=c(10,15))
 ```

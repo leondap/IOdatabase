@@ -72,7 +72,6 @@ ybox <- yrange + c(-2, 2)
     }
  plot(cbind(xlim,ylim),type="n", xaxt='n',yaxt='n',xlab = "",
            ylab = "", xaxs='i', yaxs='i')       
-plot(layer,xlim=xlim, ylim=ylim,legend=FALSE,col=layerpal,add=T)
    #
     if (!is.null(map)) {
       plot(

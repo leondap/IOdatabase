@@ -27,7 +27,7 @@ yrange <- range(outline$y, na.rm=TRUE)
 xbox <- xrange + c(-2, 2)
 ybox <- yrange + c(-2, 2)
 
-    if (is.null(mat) & is.null(distance)) {
+    if (is.null(mat) & is.null(distances)) {
       stop("A distance matrix or a colour matrix from recluster.col must be provided")
     }
       

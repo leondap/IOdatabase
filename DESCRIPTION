@@ -1,11 +1,10 @@
 Package: iodatabase
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Title: Integrated and Open Butterfly Database
+Version: 1.0.0
+Author: Leonardo Dapporto
+Maintainer: Leonardo Dapporto <leonardo.dapporto@unifi.it>
+Description: The Integrated and Open Butterfly Database provide a massive dataset of curated COI sequences for West Palearctic butterflies and an updated checklist.    Functions to manage the dataset are also provided
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true

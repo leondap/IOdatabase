@@ -5,7 +5,7 @@ Version: 1.0.0
 Author: Leonardo Dapporto
 Maintainer: Leonardo Dapporto <leonardo.dapporto@unifi.it>
 Description: The Integrated and Open Butterfly Database provide a massive dataset of curated COI sequences for West Palearctic butterflies and an updated checklist.    Functions to manage the dataset are also provided
-License: What license is it under?
+License: GPL (>= 2.0)
 Encoding: UTF-8
 LazyData: true
 Depends: recluster

@@ -78,3 +78,13 @@ recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sites
 
 
 
+References
+
+Middleton-Welling J, Dapporto L, García-Barros E, et al (2020) A new comprehensive trait database of European and Maghreb butterflies, Papilionoidea. Sci Data 7:. https://doi.org/10.1038/s41597-020-00697-7
+
+Paz‐Vinas I, Jensen EL, Bertola LD, et al (2021) Macrogenetic studies must not ignore limitations of genetic markers and scale. Ecol Lett
+
+Wiemers M, Balletto E, Dincă V, et al (2018) An updated checklist of the European butterflies (Lepidoptera, papilionoidea). Zookeys 2018:9–45. https://doi.org/10.3897/zookeys.811.28712
+
+
+

@@ -65,11 +65,6 @@ Perform a PCoA and project the configuration into RGB space as done by recluster
 sp.pcoa <- stats::cmdscale(sp.gendists, k=2)
 colours<-recluster.col2(sp.pcoa)
 ```
-Adjust colours for the map
-```
-colfunc <- colorRampPalette(c("#C1DABB","#E1D9BB","#e0c9a7","#cbb491","#a78a5d")) # colors elevation palette 
-pal <- colfunc(20) # make elevation palette
-```
 
 Plot the sequences as pie in the map, the mnore similar two sequences in colour the more genetically close they are
 ```
@@ -79,7 +74,7 @@ arrows(-13.18, 27.67, -8.67, 27.67, length = 0, col="black") #Draw the correct M
 recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.3,add=T)
 
 ```
-![](https://github.com/leondap/images/blob/main/Lasiommata_megera_map.png?raw=true)
+![](https://github.com/leondap/images/blob/main/megera_amp.png?raw=true)
 
 
 

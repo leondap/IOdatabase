@@ -7,6 +7,8 @@ The IOdatabase is intended as a project integrating several datasets of butterfl
 Metadata (coordinates, country, BOLD and Genbank codes are also available). Using these data we also calculated some basic indexes of genetic diversity (number of haplotypes observed and predicted based on rarefaction curves, GST, DST, haplotype diversity and nucleotide diversity). 
 
 
+<img src="https://github.com/leondap/images/blob/main/Figure-1-new.png?raw=true" width="200" img align="left">
+
 <img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="left">
 The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
 https://www.dropbox.com/s/6hznae7zk3swuqc/Atlas_v1.0.pdf?dl=0

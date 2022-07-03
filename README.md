@@ -47,6 +47,11 @@ mydata<-get.IOdbseqs(subfamilies=c("Satyrinae"),species=c("Pieris_napi","Pieris_
 
 The sequences can be obtained as a DNAbin object in mydata$fasta and the metadata as a table in mydata$metadata
 
+### Inspect the checklist.
+```
+head(checklist)
+```
+
 ### Create a map for distribution of lineages. 
 First select a species and obtain the metadata table (metadata) and the sequences (fasta) in the same order.
 ```

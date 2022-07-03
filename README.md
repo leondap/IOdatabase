@@ -7,13 +7,15 @@ The IOdatabase is intended as a project integrating several datasets of butterfl
 Metadata (coordinates, country, BOLD and Genbank codes are also available). Using these data we also calculated some basic indexes of genetic diversity (number of haplotypes observed and predicted based on rarefaction curves, GST, DST, haplotype diversity and nucleotide diversity). 
 
 ![](https://github.com/leondap/images/blob/main/Figure-1-new.png?raw=true)
+The study area with the representation of the “taxonomic area” (blue perimeter) from where a complete species checklist has been assessed and updated. COI sequences of species also occurring outside the taxonomic area are also included. (a) Number of sequences and (b) number of species for each 100x100 km squared cells. 
 
+
+<img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="left">
 The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
 https://www.dropbox.com/s/6hznae7zk3swuqc/Atlas_v1.0.pdf?dl=0
 <br>
 <br>
 <br>
-<img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="left">
 
 The IOdatabase project is currently contributed by four research units located in Florence University (Italy), Institut de Biologia Evolutiva (Spain), Institu Botànic de Barcelona (Spain) and University of Oulu (Finland).
 

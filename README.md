@@ -8,13 +8,13 @@ Metadata (coordinates, country, BOLD and Genbank codes are also available). Usin
 
 
 <img src="https://github.com/leondap/images/blob/main/Figure-1-new.png?raw=true" width="200" img align="left">
-
-<img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="left">
 The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
 https://www.dropbox.com/s/6hznae7zk3swuqc/Atlas_v1.0.pdf?dl=0
 <br>
 <br>
 <br>
+<img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="left">
+
 The IOdatabase project is currently contributed by four research units located in Florence University (Italy), Institut de Biologia Evolutiva (Spain), Institu Botànic de Barcelona (Spain) and University of Oulu (Finland).
 
 

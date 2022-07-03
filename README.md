@@ -115,7 +115,9 @@ For this it is only necessary to transform the map
 library(sp)
 newmap_lamb <- spTransform(map, crs.laea)
 ```
-And repeat the analysis using the coordinates stored in columns #16 and #17, areas 200,000 metres large (in define.areas) and pies for singleton large 35,000 metres on the map (in recluster.plot.pie)
+And repeat the analysis using the coordinates stored in columns #16 and #17
+in this case peis are grouped to areas 200,000 metres large (in define.areas) 
+pies for singletons appear 35,000 metres large on the map (in recluster.plot.pie)
 
 ```
 sitescodes<-define.areas(coord=metadata[,c(16,17)],areas=metadata[,7], square=200000, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))

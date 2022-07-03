@@ -128,6 +128,7 @@ coloCB <- recluster.col.palette(sp.pcoa,palette=corners,st=T)
 recluster.plot.col(coloCB, text=F, cex=1.5)
 plot(cbind(range(metadata[,16]),range(metadata[,17])),type="n",xlab="",ylab="")
 plot(newmap_lamb, add=T)
+arrows(2019182,867633.3,2456683,748569.0,length=0)
 recluster.plot.pie(long=metadata[,16],lat=metadata[,17], mat=coloCB, loc = sitescodes$val,minsize=35000,add=T)
 
 ```
@@ -135,6 +136,23 @@ recluster.plot.pie(long=metadata[,16],lat=metadata[,17], mat=coloCB, loc = sites
 ![](https://github.com/leondap/images/blob/main/rhamni_map.png?raw=true)
 
 The graph axes are now in metres
+
+To add a different colour to the sea revert the newmap_lamb obejct and plot it
+
+```
+outline <- maps::map(newmap_lamb, plot=FALSE) # returns a list of x/y coords
+xrange <- range(outline$x, na.rm=TRUE) # get bounding box
+yrange <- range(outline$y, na.rm=TRUE)
+xbox <- xrange + c(-2, 2)
+ybox <- yrange + c(-2, 2)
+plot(cbind(range(metadata[,16]),range(metadata[,17])),type="n",xlab="",ylab="")
+plot(newmap_lamb, add=T)
+polypath(c(outline$x, NA, c(xbox, rev(xbox))), c(outline$y, NA, rep(ybox, each=2)),col="azure2", rule="evenodd")
+arrows(2019182,867633.3,2456683,748569.0,length=0)
+recluster.plot.pie(long=metadata[,16],lat=metadata[,17], mat=coloCB, loc = sitescodes$val,minsize=35000,add=T)
+```
+![](https://github.com/leondap/images/blob/main/gonepteryx_sea.png?raw=true)
+
 
 
 References

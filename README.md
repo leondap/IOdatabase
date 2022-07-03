@@ -134,6 +134,7 @@ recluster.plot.pie(long=metadata[,16],lat=metadata[,17], mat=coloCB, loc = sites
 
 ![](https://github.com/leondap/images/blob/main/rhamni_map.png?raw=true)
 
+The graph axes are now in metres
 
 
 References

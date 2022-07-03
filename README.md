@@ -89,7 +89,15 @@ recluster.plot.col(coloCB, text=F, cex=1.5)
 ```
 ![](https://github.com/leondap/images/blob/main/pcoacb.png?raw=true)
 
+And plot the map
 
+```
+plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
+plot(map, add=T)
+arrows(-13.18, 27.67, -8.67, 27.67, length = 0, col="black") #Draw the correct Morocco boundary
+recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=coloCB, loc = sitescodes$val,minsize=0.3,add=T)
+```
+![](https://github.com/leondap/images/blob/main/megera%20colour%20blind.png?raw=true)
 
 
 

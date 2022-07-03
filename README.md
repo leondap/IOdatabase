@@ -10,6 +10,9 @@ Metadata (coordinates, country, BOLD and Genbank codes are also available). Usin
 The study area with the representation of the “taxonomic area” (blue perimeter) from where a complete species checklist has been assessed and updated. COI sequences of species also occurring outside the taxonomic area are also included. (a) Number of sequences and (b) number of species for each 100x100 km squared cells. 
 
 
+
+
+
 <img src="https://github.com/leondap/images/blob/main/cover.jpg?raw=true" width="180" img align="left">
 The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
 https://www.dropbox.com/s/6hznae7zk3swuqc/Atlas_v1.0.pdf?dl=0

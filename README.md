@@ -80,6 +80,19 @@ recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sites
 ![](https://github.com/leondap/images/blob/main/megera_amp.png?raw=true)
 
 
+It is also possible to select any combination of colours (i.e a colour blind friendly palette) by creating RGB proiection with costum colours at te four corners
+
+```
+corners<-palette.col("#000000","#FFC107","#1E88E5","#E6E6E6",size=20)
+coloCB <- recluster.col.palette(sp.pcoa,palette=corners,st=T)       	
+recluster.plot.col(coloCB, text=F, cex=1.5)
+```
+![](https://github.com/leondap/images/blob/main/pcoacb.png?raw=true)
+
+
+
+
+
 
 References
 

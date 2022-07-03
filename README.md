@@ -104,6 +104,33 @@ recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=coloCB, loc = sitesc
 ```
 ![](https://github.com/leondap/images/blob/main/megera%20colour%20blind.png?raw=true)
 
+The IOdatabse also has coordinates in the Lambert Azimuthal equal area projection to obtain maps where distances among points are preserved and to group specimens into areas of the same size
+
+```
+crs.laea <- CRS("+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs")
+```
+For this it is only necessary to transform the map
+
+```
+library(sp)
+newmap_lamb <- spTransform(map, crs.laea)
+```
+And repeat the analysis using the coordinates stored in columns #16 and #17, areas 200,000 metres large (in define.areas) and pies for singleton large 35,000 metres on the map (in recluster.plot.pie)
+
+```
+sitescodes<-define.areas(coord=metadata[,c(16,17)],areas=metadata[,7], square=200000, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))
+sp.gendists <- dist.dna(fasta, model = "raw", pairwise.deletion = TRUE)
+sp.pcoa <- stats::cmdscale(sp.gendists, k=2)
+corners<-palette.col("#000000","#FFC107","#1E88E5","#E6E6E6",size=20)
+coloCB <- recluster.col.palette(sp.pcoa,palette=corners,st=T)       	
+recluster.plot.col(coloCB, text=F, cex=1.5)
+plot(cbind(range(metadata[,16]),range(metadata[,17])),type="n",xlab="",ylab="")
+plot(newmap_lamb, add=T)
+recluster.plot.pie(long=metadata[,16],lat=metadata[,17], mat=coloCB, loc = sitescodes$val,minsize=35000,add=T)
+
+```
+
+
 
 
 

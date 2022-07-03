@@ -74,8 +74,6 @@ pal <- colfunc(20) # make elevation palette
 Plot the sequences as pie in the map, the mnore similar two sequences in colour the more genetically close they are
 ```
 plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
-plot(elev,col = pal,add=T,legend=F)
-plot(sea,add = T, col = "azure2", border=F)
 plot(map, add=T)
 arrows(-13.18, 27.67, -8.67, 27.67, length = 0, col="black") #Draw the correct Morocco boundary
 recluster.plot.pie(long=metadata[,10],lat=metadata[,9], mat=colours, loc = sitescodes$val,minsize=0.3,add=T)

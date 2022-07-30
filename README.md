@@ -202,6 +202,8 @@ Middleton-Welling J, Dapporto L, García-Barros E, et al (2020) A new comprehens
 
 Paz‐Vinas I, Jensen EL, Bertola LD, et al (2021) Macrogenetic studies must not ignore limitations of genetic markers and scale. Ecol Lett
 
+Paradis E (2010) pegas: an R package for population genetics with an integrated–modular approach. Bioinformatics, 26, 419-420.
+
 Wiemers M, Balletto E, Dincă V, et al (2018) An updated checklist of the European butterflies (Lepidoptera, papilionoidea). Zookeys 2018:9–45. https://doi.org/10.3897/zookeys.811.28712
 
 

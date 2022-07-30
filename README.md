@@ -193,7 +193,7 @@ Plot the haplotype network (see plot options in pegas)
 ```
 plot(dataNet,size=sqrt(sz1), bg=colhapl[order_new], fast = F, show.mutation=3,threshold=c(1,15), labels=F)
 ```
-
+![](https://github.com/leondap/images/blob/main/megara%20hn.png?raw=true)
 
 
 References

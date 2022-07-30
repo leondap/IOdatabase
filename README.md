@@ -154,6 +154,46 @@ recluster.plot.pie(long=metadata[,16],lat=metadata[,17], mat=coloCB, loc = sites
 ```
 ![](https://github.com/leondap/images/blob/main/gonepteryx_sea.png?raw=true)
 
+Calculate the haplotype networks with pegas and attribute the same colours as in the map
+
+```
+library (pegas)
+```
+Calculate haplotypes by using recluster.haplotypes and match the attributions by sequence names
+
+```
+haprh<-recluster.haplotypes(fasta)
+match<- match(names(fasta),rownames(haprh$data_final))
+attribution<-haprh$data_final
+attribution<-attribution[match,]
+sz<-haprh$frequency
+```
+Calculate the haplotype networks (there are several options in pegas)
+
+```
+d <- dist.dna(haprh$seqs, "N", pairwise.deletion = T)
+dataNet <- rmst(d)
+```
+
+Attribute the colours
+
+```
+attribution2<-as.numeric(attribution[,2])
+colhapl<-NULL
+for(c in 1:length(haprh$seqs)){
+  pesca<-which(rownames(coloCB)==names(haprh$seqs)[c])
+	colhapl[c]<- rgb(coloCB[pesca, 3], coloCB[pesca, 4], coloCB[pesca, 5], maxColorValue = 255) 
+}
+attributionHN<-attr(dataNet , "labels")
+order_new<-match(attributionHN,names(haprh$seqs))
+sz1<-sz[order_new]
+```
+Plot the haplotype network (see plot options in pegas)
+
+```
+plot(dataNet,size=sqrt(sz1), bg=colhapl[order_new], fast = F, show.mutation=3,threshold=c(1,15), labels=F)
+```
+
 
 
 References

@@ -196,6 +196,37 @@ plot(dataNet,size=sqrt(sz1), bg=colhapl[order_new], fast = F, show.mutation=3,th
 ![](https://github.com/leondap/images/blob/main/megara%20hn.png?raw=true)
 
 
+### Calculate the IGV indexes
+
+Calculate GST and DST (in the Atlas sitescodes are varied 10 times to exclude the effect of grain and location)
+
+```
+calc<-recluster.fst(sp.gendists,sitescodes$val,setzero=T,setnazero=T)
+calc$Gst
+calc$Dst
+```
+Calculate haplotype and nucleotyde diversity with pegas
+```
+HD<-hap.div(fasta)
+ND<-nuc.div(fasta, pairwise.deletion = TRUE)
+HD
+ND
+```
+
+Calculate number of haplotype and its asymptotic value using iNEXT. The fraction of detected haplotypes can be also obtained
+
+```
+library(iNEXT)
+accu<-iNEXT(haprh$frequency, q=0, datatype="abundance", size=NULL, endpoint=sum(haprh$frequency), knots=40, se=TRUE, conf=0.95, nboot=50)
+observed<-accu$AsyEst[1,1]
+asymptotic<-round(accu$AsyEst[1,2],3)
+fraction<-round(observed/asymptotic,3)
+observed
+asymptotic
+fraction
+```
+
+
 References
 
 Middleton-Welling J, Dapporto L, García-Barros E, et al (2020) A new comprehensive trait database of European and Maghreb butterflies, Papilionoidea. Sci Data 7:. https://doi.org/10.1038/s41597-020-00697-7

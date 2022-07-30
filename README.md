@@ -154,7 +154,7 @@ recluster.plot.pie(long=metadata[,16],lat=metadata[,17], mat=coloCB, loc = sites
 ```
 ![](https://github.com/leondap/images/blob/main/gonepteryx_sea.png?raw=true)
 
-Calculate the haplotype networks with pegas and attribute the same colours as in the map
+### Calculate the haplotype networks with pegas and attribute the same colours as in the map
 
 ```
 library (pegas)

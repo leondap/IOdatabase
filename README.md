@@ -229,6 +229,8 @@ fraction
 
 References
 
+Hsieh TC, Ma KH, Chao A (2016) iNEXT: an R package for rarefaction and extrapolation of species diversity (H ill numbers). Methods Ecol Evol, 7, 1451-1456.
+
 Middleton-Welling J, Dapporto L, García-Barros E, et al (2020) A new comprehensive trait database of European and Maghreb butterflies, Papilionoidea. Sci Data 7:. https://doi.org/10.1038/s41597-020-00697-7
 
 Paz‐Vinas I, Jensen EL, Bertola LD, et al (2021) Macrogenetic studies must not ignore limitations of genetic markers and scale. Ecol Lett

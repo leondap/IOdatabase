@@ -1,7 +1,7 @@
 Package: iodatabase
 Type: Package
 Title: Integrated and Open Butterfly Database
-Version: 1.0.0
+Version: 1.0.1
 Author: Leonardo Dapporto
 Maintainer: Leonardo Dapporto <leonardo.dapporto@unifi.it>
 Description: The Integrated and Open Butterfly Database provide a massive dataset of curated COI sequences for West Palearctic butterflies and an updated checklist.    Functions to manage the dataset are also provided

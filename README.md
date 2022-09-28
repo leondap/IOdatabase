@@ -21,7 +21,7 @@ The Atlas contains the map of COI variation for all European species for which s
 <br>
 <br>
 
-The IOdatabase project is currently contributed by four research units: the Numerical and Experimental Zoology lab [ZEN lab](https://zenlab.wixsite.com/butterflylab) in Florence University, Italy; The [Butterfly Diversity and Evolution lab](https://www.biologiaevolutiva.org/rvila/Lab/Home.html) at the Institut de Biologia Evolutiva, Spain; The Lepidoptera Research Lab [LepiLab](https://vleps.wordpress.com/research/) at the University of Oulu, Finland and the [Evolutionary Ecology and Conservation of Migratory Insects lab](http://www.gerardtalavera.com/) at the Institu Botànic de Barcelona, Spain.
+The IOdatabase project is currently contributed by four research units: the Numerical and Experimental Zoology lab [ZEN lab](https://zenlab.wixsite.com/butterflylab) in Florence University, Italy; The [Butterfly Diversity and Evolution lab](https://www.biologiaevolutiva.org/rvila/Lab/Home.html) at the Institut de Biologia Evolutiva, Spain; The Lepidoptera Research Lab [LepiLab](https://vleps.wordpress.com/research/) at the University of Oulu, Finland and the [Insect Migration and Phylodiversity lab at the Institut Botànic de Barcelona, Spain](http://www.gerardtalavera.com/) at the Institu Botànic de Barcelona, Spain.
 
 
 

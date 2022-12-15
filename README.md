@@ -220,7 +220,7 @@ ND
 
 Calculate number of haplotype and its asymptotic value using iNEXT. The fraction of detected haplotypes can be also obtained
 
-```
+
 library(iNEXT)
 accu<-iNEXT(haprh$frequency, q=0, datatype="abundance", size=NULL, endpoint=sum(haprh$frequency), knots=40, se=TRUE, conf=0.95, nboot=50)
 observed<-accu$AsyEst[1,1]
@@ -230,6 +230,38 @@ observed
 asymptotic
 fraction
 ```
+
+The iodatabase framework can be used to inspect the patterns of introgression by selecting the groups of species suspected to share haplotypes (or genotypes)
+
+```
+
+mydata<-get.IOdbseqs(species=c("Pieris_rapae","Pieris_mannii"))
+metadata<-mydata$metadata
+fasta<-mydata$fasta
+sitescodes<-define.areas(coord=metadata[,c(10,9)],areas=metadata[,7], square=3, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))
+
+sp.gendists <- dist.dna(fasta, model = "raw", pairwise.deletion = TRUE)
+sp.pcoa <- stats::cmdscale(sp.gendists, k=2)
+corners<-palette.col("#000000","#FFC107","#1E88E5","#E6E6E6",size=20)
+coloCB <- recluster.col.palette(sp.pcoa,palette=corners,st=T)       	
+recluster.plot.col(coloCB, text=F, cex=1.5)
+
+first<-which(metadata$Species=="rapae")
+
+plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
+plot(map, add=T)
+recluster.plot.pie(long=metadata[first,10],lat=metadata[first,9], mat=coloCB[first,], loc = sitescodes$val[first],minsize=0.4,add=T)
+
+second<-which(metadata$Species=="mannii")
+
+plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
+plot(map, add=T)
+recluster.plot.pie(long=metadata[second,10],lat=metadata[second,9], mat=coloCB[second,], loc = sitescodes$val[second],minsize=0.4,add=T)
+```
+It is clear that the first species plotted (Pieris rapae) does not share haplotypes with the second (Pieris mannii).
+
+
+
 
 
 References

@@ -264,6 +264,33 @@ It is clear that the first species plotted (Pieris rapae) does not share haploty
 ![](https://github.com/leondap/images/blob/main/manii.jpeg?raw=true)
 
 
+When Lysandra coridon and L. bellargus are selected, a directional introgression from L. coridon (first) to L. bellargus (second) can be detected.
+
+```
+mydata<-get.IOdbseqs(species=c("Lysandra_bellargus","Lysandra_coridon"))
+metadata<-mydata$metadata
+fasta<-mydata$fasta
+sitescodes<-define.areas(coord=metadata[,c(10,9)],areas=metadata[,7], square=3, areascoll=c("Africa", "Eurasia", "Britain", "Ireland"))
+
+sp.gendists <- dist.dna(fasta, model = "raw", pairwise.deletion = TRUE)
+sp.pcoa <- stats::cmdscale(sp.gendists, k=2)
+corners<-palette.col("#000000","#FFC107","#1E88E5","#E6E6E6",size=20)
+coloCB <- recluster.col.palette(sp.pcoa,palette=corners,st=T)       	
+recluster.plot.col(coloCB, text=F, cex=1.5)
+
+first<-which(metadata$Species=="bellargus")
+second<-which(metadata$Species=="coridon")
+
+plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
+plot(map, add=T)
+recluster.plot.pie(long=metadata[first,10],lat=metadata[first,9], mat=coloCB[first,], loc = sitescodes$val[first],minsize=0.4,add=T)
+
+plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
+plot(map, add=T)
+recluster.plot.pie(long=metadata[second,10],lat=metadata[second,9], mat=coloCB[second,], loc = sitescodes$val[second],minsize=0.4,add=T)
+```
+![](https://github.com/leondap/images/blob/main/coridon.jpeg?raw=true)
+![](https://github.com/leondap/images/blob/main/bellargus.jpeg?raw=true)
 
 
 References

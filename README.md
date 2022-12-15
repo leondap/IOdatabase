@@ -220,6 +220,7 @@ ND
 
 Calculate number of haplotype and its asymptotic value using iNEXT. The fraction of detected haplotypes can be also obtained
 
+```
 
 library(iNEXT)
 accu<-iNEXT(haprh$frequency, q=0, datatype="abundance", size=NULL, endpoint=sum(haprh$frequency), knots=40, se=TRUE, conf=0.95, nboot=50)
@@ -234,7 +235,6 @@ fraction
 The iodatabase framework can be used to inspect the patterns of introgression by selecting the groups of species suspected to share haplotypes (or genotypes)
 
 ```
-
 mydata<-get.IOdbseqs(species=c("Pieris_rapae","Pieris_mannii"))
 metadata<-mydata$metadata
 fasta<-mydata$fasta
@@ -258,6 +258,7 @@ plot(cbind(range(metadata[,10]),range(metadata[,9])),type="n",xlab="",ylab="")
 plot(map, add=T)
 recluster.plot.pie(long=metadata[second,10],lat=metadata[second,9], mat=coloCB[second,], loc = sitescodes$val[second],minsize=0.4,add=T)
 ```
+
 It is clear that the first species plotted (Pieris rapae) does not share haplotypes with the second (Pieris mannii).
 https://github.com/leondap/images/blob/main/rapae.jpeg?raw=true
 https://github.com/leondap/images/blob/main/manii.jpeg?raw=true

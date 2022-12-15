@@ -260,8 +260,8 @@ recluster.plot.pie(long=metadata[second,10],lat=metadata[second,9], mat=coloCB[s
 ```
 
 It is clear that the first species plotted (Pieris rapae) does not share haplotypes with the second (Pieris mannii).
-https://github.com/leondap/images/blob/main/rapae.jpeg?raw=true
-https://github.com/leondap/images/blob/main/manii.jpeg?raw=true
+![](https://github.com/leondap/images/blob/main/rapae.jpeg?raw=true)
+![](https://github.com/leondap/images/blob/main/manii.jpeg?raw=true)
 
 
 

@@ -1,5 +1,5 @@
 
-define.areas<-function(coord,areas, square,areascoll=c("Africa", "Eurasia", "Britain", "Ireland")){
+define.areas<-function(coord,areas, square, shiftx=0, shifty=0, areascoll=c("Africa", "Eurasia", "Britain", "Ireland")){
   res<-NULL
   val<-NULL
   islandlat<-aggregate(coord[,2]~ areas, FUN="mean")
@@ -12,8 +12,11 @@ define.areas<-function(coord,areas, square,areascoll=c("Africa", "Eurasia", "Bri
   for (i in 1:nrow(islandlat)){
     coord[which(areas==islandlat[i,1]),4]<-islandlat[i,2]
   }
-lat<-(floor(coord[,2]/square)*square)+(square/2)
-long<-(floor(coord[,1]/square)*square)+(square/2)
+	lat1<-coord[,2]+shifty
+	long1<-coord[,1]+shiftx
+
+ 	lat<-(floor(lat1/square)*square)+((square/2)-shifty)
+	long<-(floor(long1/square)*square)+((square/2)-shiftx)
 
 main<-coord[which(areas%in%areascoll),]
 mainar<-areas[which(areas%in%areascoll)]

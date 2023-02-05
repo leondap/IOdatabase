@@ -21,7 +21,7 @@ recluster.plot.pie.iodb <-
            ylab = NULL,
            ...) {
 
-    outline <- maps::map(map, plot = FALSE)
+   outline <- maps::map(map, plot = FALSE)
     xrange <- range(outline$x, na.rm = TRUE)
     yrange <- range(outline$y, na.rm = TRUE)
     xbox <- xrange + c(-2, 2)
@@ -57,14 +57,10 @@ recluster.plot.pie.iodb <-
         ylim <- range(lat)
     }
     xylim <- cbind(xlim, ylim)
-    if (!is.null(countrycol)) {
-        if (countrycol == "deafult") {
-            countrycol <- "gray"
-        }
-        else {
-            countrycol <- countrycol
-        }
-    }
+    if (is.null(countrycol)) {
+          countrycol <- "gray"
+     }
+           
     plot(cbind(xlim, ylim), type = "n", xaxt = "n", yaxt = "n", 
         xlab = "", ylab = "", xaxs = "i", yaxs = "i")
     if (!is.null(map)) {

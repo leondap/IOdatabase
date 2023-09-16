@@ -18,8 +18,11 @@ The study area with the representation of the “taxonomic area” (blue perimet
 
 <img src="https://github.com/leondap/images/blob/1fd6d985a0794d8917b66b0e27216735f8ef660b/cover_1_1_final.jpg" width="180" img align="left">
 The DNA-barcodes are also used to generate The Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
-https://drive.google.com/file/d/1RrIEQOQq1ch70iggk2ARF9sIX7Vu8ABd/view?usp=sharing
+https://drive.google.com/file/d/1KmXTsYHdC3pi-EdstbaeXpQSz0ULnsVv/view?usp=drive_link
 <br>
+
+(version 1.0 is still available here https://drive.google.com/file/d/1RrIEQOQq1ch70iggk2ARF9sIX7Vu8ABd/view?usp=sharing)
+
 The Atlas contains the map of COI variation for all European species for which sequences are available together with their indexes of intraspecific genetic differentiation and it description is published in Global Ecology and Biogeography (DOI:10.1111/geb.13579)
 <br>
 <br>

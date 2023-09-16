@@ -23,9 +23,8 @@ https://drive.google.com/file/d/1KmXTsYHdC3pi-EdstbaeXpQSz0ULnsVv/view?usp=drive
 
 (version 1.0 is still available here https://drive.google.com/file/d/1RrIEQOQq1ch70iggk2ARF9sIX7Vu8ABd/view?usp=sharing)
 
-The Atlas contains the map of COI variation for all European species for which sequences are available together with their indexes of intraspecific genetic differentiation and it description is published in Global Ecology and Biogeography (DOI:10.1111/geb.13579)
-<br>
-<br>
+The Atlas contains the map of COI variation for all European species for which sequences are available together with their indexes of intraspecific genetic differentiation. The description is published in Global Ecology and Biogeography (DOI:10.1111/geb.13579)
+
 
 The IOdatabase project is currently contributed by four research units: the Numerical and Experimental Zoology lab [ZEN lab](https://zenlab.wixsite.com/butterflylab) in Florence University, Italy; The [Butterfly Diversity and Evolution lab](https://www.biologiaevolutiva.org/rvila/Lab/Home.html) at the Institut de Biologia Evolutiva, Spain; The Lepidoptera Research Lab [LepiLab](https://vleps.wordpress.com/research/) at the University of Oulu, Finland and the [Insect Migration and Phylodiversity lab at the Institut Botànic de Barcelona, Spain](http://www.gerardtalavera.com/) at the Institu Botànic de Barcelona, Spain.
 

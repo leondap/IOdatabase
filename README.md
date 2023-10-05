@@ -54,7 +54,7 @@ mydata<-get.IOdbseqs(subfamilies=c("Satyrinae"),species=c("Pieris_napi","Pieris_
 The sequences can be obtained as a DNAbin object in mydata$fasta and the metadata as a table in mydata$metadata
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-- Version 1.1 is now available with a corrections and 1172 new sequences and 2 species more  
+- Version 2.0 is now available with a corrections and 1172 new sequences and 2 species more  
 - The dataset now contains 33298 sequences                                                                                     -
 ---------------------------------------------------------------------------------------------------------------------------------------
 

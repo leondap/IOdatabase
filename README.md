@@ -18,7 +18,7 @@ The study area with the representation of the “taxonomic area” (blue perimet
 
 <img src="https://github.com/leondap/images/blob/d26a91289519889c21071ba914c5f46727d0f7cc/cover_2_0.jpg" width="180" img align="left">
 The DNA-barcodes are used to generate The version 2.0 of the Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
-https://drive.google.com/file/d/1i_W8VKjHpA5XNYSDeRalkiPM-8zs4UYW/view?usp=sharing
+https://drive.google.com/file/d/1uXUlRHkETWunqNPOBYV8KpUHst31i_fg/view?usp=sharing
 <br>
 
 The version 1.0 is still available here https://drive.google.com/file/d/1RrIEQOQq1ch70iggk2ARF9sIX7Vu8ABd/view?usp=sharing

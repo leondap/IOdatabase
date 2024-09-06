@@ -10,6 +10,8 @@ The IOdatabase is intended as a project integrating several datasets of butterfl
 Metadata are also available: coordinates in WGS84 (degrees) and Lambert projections (meters), BOLD and Genbank codes, Continental areas and country obtained by an autmatic attribution using the rworldextra R package. Using these data we also calculated some basic indexes of genetic diversity (number of haplotypes observed and predicted based on rarefaction curves, GST, DST, haplotype diversity and nucleotide diversity). 
 
 ![](https://github.com/leondap/images/blob/100916bbe407f55a0402f7b39c6227ccd8810986/Fig_map.jpg)
+
+![](https://github.com/leondap/images/blob/main/maps_2_1.jpg?raw=true)
 The study area with the representation of the “taxonomic area” (blue perimeter) from where a complete species checklist has been assessed and updated. COI sequences of species also occurring outside the taxonomic area are also included. (a) Number of sequences and (b) number of species for each 100x100 km squared cells.
 
 

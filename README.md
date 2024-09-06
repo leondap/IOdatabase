@@ -4,7 +4,7 @@
 ### Integrated and Open Butterly Database 
 
 
-## The new version 2.0 of the Atlas is now available! 
+## The new version 2.1 of the Atlas is now available (August 2024)! 
 
 The IOdatabase is intended as a project integrating several datasets of butterflies from Western Palaearctic harmonised with a shared taxonomy. IOdatabase now includes a revised version of the species checklist from West Palerarctic (Wiemers et al. 2016 and Middleton Welling et al. 2020) and more than 32,000 COI sequences for 536 species. COI sequences belong to three main sources: 1) De novo sequencing mostly for Maghreb and Macaronesia 2) Published DNA-barcode libraries and public BOLD projects compiled at regional level 3) Studies providing COI of single species or genera. In the latter case, we checked whether haplotypes, instead of specimens, were included in repositories (Paz‐Vinas et al. 2021). If the number of specimens sharing a given haplotype in a particular location was reported, we replicated the haplotype sequences to obtain data at the specimen level, otherwise the sequences were excluded. We verified species identifications by building neighbor-joining trees for each genus. When morphology could not be verified, we removed sequences not clustering within the species to which they were attributed if the mismatch did not involve one of the 77 species showing DNA-barcode sharing.
 Metadata are also available: coordinates in WGS84 (degrees) and Lambert projections (meters), BOLD and Genbank codes, Continental areas and country obtained by an autmatic attribution using the rworldextra R package. Using these data we also calculated some basic indexes of genetic diversity (number of haplotypes observed and predicted based on rarefaction curves, GST, DST, haplotype diversity and nucleotide diversity). 
@@ -17,11 +17,13 @@ The study area with the representation of the “taxonomic area” (blue perimet
 
 
 <img src="https://github.com/leondap/images/blob/d26a91289519889c21071ba914c5f46727d0f7cc/cover_2_0.jpg" width="180" img align="left">
-The DNA-barcodes are used to generate The version 2.0 of the Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:<br>
-https://drive.google.com/file/d/1uXUlRHkETWunqNPOBYV8KpUHst31i_fg/view?usp=sharing
+The version 2.1 of the Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:
+<br>
+
 <br>
 
 The version 1.0 is still available here https://drive.google.com/file/d/1RrIEQOQq1ch70iggk2ARF9sIX7Vu8ABd/view?usp=sharing
+The version 2.0 is still available here https://drive.google.com/file/d/1uXUlRHkETWunqNPOBYV8KpUHst31i_fg/view?usp=sharing
 
 The Atlas contains the map of COI variation for all European species for which sequences are available together with their indexes of intraspecific genetic differentiation. The description is published in Global Ecology and Biogeography (DOI:10.1111/geb.13579)
 

@@ -26,7 +26,8 @@ https://drive.google.com/file/d/11Edwg4Iq9MbjhRhzBS2_8LVOrb26qg8g/view?usp=shari
 The version 1.0 is still available here https://drive.google.com/file/d/1RrIEQOQq1ch70iggk2ARF9sIX7Vu8ABd/view?usp=sharing
 <br>
 The version 2.0 is still available here https://drive.google.com/file/d/1uXUlRHkETWunqNPOBYV8KpUHst31i_fg/view?usp=sharing
-
+<br>
+<br>
 The Atlas contains the map of COI variation for all European species for which sequences are available together with their indexes of intraspecific genetic differentiation. The description is published in Global Ecology and Biogeography (DOI:10.1111/geb.13579)
 
 

@@ -19,7 +19,7 @@ The study area with the representation of the “taxonomic area” (blue perimet
 
 
 
-<img src="https://github.com/leondap/images/blob/d26a91289519889c21071ba914c5f46727d0f7cc/cover_2_0.jpg" width="180" img align="left">
+<img src="https://github.com/leondap/images/blob/main/cover_2_1_pages-to-jpg-0001.jpg?raw=true" width="180" img align="left">
 The version 2.1 of the Atlas of mitochondrial genetic diversity for Western Palearctic butterflies that can be freely downloaded from this link:
 <br>
 https://drive.google.com/file/d/11Edwg4Iq9MbjhRhzBS2_8LVOrb26qg8g/view?usp=sharing

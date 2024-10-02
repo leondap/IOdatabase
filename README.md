@@ -15,7 +15,7 @@ Metadata are also available: coordinates in WGS84 (degrees) and Lambert projecti
 <br>
 The study area with the representation of the “taxonomic area” (blue perimeter) from where a complete species checklist has been assessed and updated. The latest version of the checklist can be downloaded from this link
 <br>
-
+https://github.com/leondap/images/blob/1284e5bdebea66b57e0019bd6616ce6731362ea5/checklist20240718.xlsx
 <br>
 COI sequences of species also occurring outside the taxonomic area are also included. (a) Number of sequences and (b) number of species for each 100x100 km squared cells.
 

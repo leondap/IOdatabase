@@ -64,7 +64,7 @@ recluster.plot.pie.iodb <-
     plot(cbind(xlim, ylim), type = "n", xaxt = "n", yaxt = "n", 
         xlab = "", ylab = "", xaxs = "i", yaxs = "i")
     if (!is.null(map)) {
-        plot(map, asp = 2, add = T, xlab = xlab, ylab = ylab, 
+        sp::plot(map, asp = 2, add = T, xlab = xlab, ylab = ylab, 
             col = countrycol, fill = T, lwd = 0.7, border = "black", 
             bg = "azure2", cex.axis = 0.7, main = main)
     }
